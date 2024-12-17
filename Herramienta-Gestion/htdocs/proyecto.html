@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>CLEXSTASK</title>
+</head>
+
+<body>
+  <div class="boton-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="menu-tamano">
+    <h2 id="menu">Menú</h2>
+    <a href="#">Perfil</a>
+    <a href="#">Projectes</a>
+    <a href="#">Notificacions</a>
+  </div>
+
+  <div class="informacion-principal">
+    <div class="div-principal">
+      <div class="div-proyecto">
+        <div class="cabezera-proyecto">
+          <h1>TAREAS:</h1>
+        </div>
+
+        <div class="tareas-lista" id="tareasLista"></div>
+
+      </div>
+    </div>
+
+    <div class="botonColaboradores">
+      <img src="../img/añadirColaboradores.png" alt="añadirColaboradores" id="imagenColaboradores">
+    </div>
+
+    <div id="formColaboradoresContainer"></div>
+
+  </div>
+
+  <form id="proyectoForm" action="../php/controller.php" method="POST">
+    <input type="hidden" id="proyectoId" name="proyectoId" value="">
+  </form>
+
+  <script src="../script/script.js"></script>
+  <script src="../script/mostrarTareas.js"></script>
+</body>
+
+</html>

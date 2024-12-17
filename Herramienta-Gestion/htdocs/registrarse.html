@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" class="htmlgeneral">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Registra't</title>
+</head>
+
+<body class="bodyforms">
+    <div class="form-container">
+
+        <form action="../php/controller.php" method="POST" class="form">
+
+            <h1 id="h1-registrat">REGISTRA'T</h1>
+
+            <input type="text" placeholder="Nom d'usuari" id="nombre" name="nombre" required>
+            <input type="email" placeholder="Correu electrònic" id="email" name="email" required>
+            <input type="password" placeholder="Contrasenya" id="password" name="password" required>
+
+            <button type="submit" class="boton-enviar" name="insert">Registrar-se</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
